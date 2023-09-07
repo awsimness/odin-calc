@@ -33,9 +33,18 @@ body {
     border-radius: 30px;
     margin: 10px;
     height: 20px;
-    padding-top: 70px;
+    padding-bottom: 10px;
+    padding-top: 60px;
     padding-right: 40px;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.lower{
+    display: flex;
+    justify-content: end;
 }
 
 .buttons {
@@ -48,12 +57,13 @@ body {
     border: solid #fdfdfd;
 }
 
-.press{
+.press,
+.operation{
     background-color: #fdfdfd;
     font-size: 15px;
     padding-top: 15px;
     width: 60px;
-    height: 30px;
+    height: 51px;
     margin: 20px;
     border:solid gray;
     border-radius: 20px;
@@ -70,3 +80,15 @@ body {
     margin: 10px;
     padding: 10px;
 }
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 0;
+    }
+}
+
+.cursor {
+    animation: cursor-blink 1s steps(2) infinite;
+    color: white;
+}
+
